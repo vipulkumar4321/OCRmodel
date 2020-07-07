@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>OCR</title>
+
+</head>
+
+<body>
+    <h1>OCR Model</h1>
+    <br>
+    <br>
+    <br>
+    <!-- <form action="/ocrmodel" method="post">
+        <label for="img">Image link:</label><br>
+        <input type="text" id="img" name="img">
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <form action="/ocrmodel" method="POST" encType="multipart/form-data">
+        <label for="imginput" class="required">Image: </label>
+        <input type="file" accept="image/*" name="imginput" id="imginput" />   
+        <input type="submit" value="Submit">    
+    </form>
+
+
+</body>
+
+</html>
